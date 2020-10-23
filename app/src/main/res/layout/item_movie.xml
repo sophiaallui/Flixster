@@ -20,7 +20,10 @@
         android:adjustViewBounds="false"
         android:cropToPadding="false"
         android:scaleType="centerInside"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:transitionName="posterTransition"
+
+    />
 
     <TextView
         android:id="@+id/tvTitle"

@@ -13,11 +13,21 @@
     android:orientation="vertical"
     app:barrierMargin="@android:dimen/dialog_min_width_major"
     tools:context=".DetailActivity">
-
+<!--
+    <ImageView
+        android:transitionName="example_transition"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        tools:srcCompat="@tools:sample/avatars"
+        />
+-->
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/player"
         android:layout_width="match_parent"
-        android:layout_height="250dp" />
+        android:layout_height="250dp"
+        android:transitionName="posterTransition"
+        />
 
     <TextView
         android:id="@+id/tvTitle"

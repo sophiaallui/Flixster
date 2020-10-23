@@ -1,5 +1,6 @@
 package com.example.flixster.adapters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -15,6 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityOptionsCompat;
+import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -111,10 +114,14 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     //Toast.makeText(context, movie.getTitle() , Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(context, DetailActivity.class);
                     //i.putExtra("title", movie.getTitle());
-
                     // Make movie into a parsebel
                     i.putExtra("movie", Parcels.wrap(movie));
                     context.startActivity(i);
+
+                    ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation
+                            ((Activity) context, ivPoster, ViewCompat.getTransitionName(ivPoster));
+                    context.startActivity(i,options.toBundle());
+
                 }
             });
 
