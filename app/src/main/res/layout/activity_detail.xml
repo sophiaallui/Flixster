@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:baselineAligned="false"
+    android:clickable="false"
+    android:orientation="vertical"
+    app:barrierMargin="@android:dimen/dialog_min_width_major"
+    tools:context=".DetailActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F1EEEE"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="Mulan" />
+
+    <TextView
+        android:id="@+id/release_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#B3B0B0"
+        tools:text="2020-09-04" />
+
+    <TextView
+        android:id="@+id/TitlePopularity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Popularity:"
+        android:textAlignment="center"
+        android:textColor="#6D6D6D"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/popularity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#F4F3F3"
+        tools:text="806.75" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="10"
+        android:progressTint="#EA0202"
+        android:rating="8.5" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#BFB9B9"
+        android:textSize="16sp"
+        tools:text="When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential." />
+
+</LinearLayout>

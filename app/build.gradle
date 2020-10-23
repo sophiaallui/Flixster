@@ -28,6 +28,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
     // was added because we included the recyclerview in design
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -39,4 +40,6 @@ dependencies {
     // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
+    implementation 'org.parceler:parceler-api:1.1.12'
+    annotationProcessor 'org.parceler:parceler:1.1.12'
 }
