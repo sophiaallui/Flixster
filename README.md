@@ -21,13 +21,16 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] Add a rounded corners for the images using the Glide transformations. (1 point)
 
 ### App Walkthough GIF
-
+REQUIRED STORES 
 <img src="flixsterPt2.gif" width=250><br>
+
+Shared Element Transition
+<img src="sharedElements.gif" width=250><br>
 
 ### Notes
 
 Describe any challenges encountered while building the app.
-Implemented a shared element transition 
+Implemented a shared element transition, need more work on it.  
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
